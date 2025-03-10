@@ -1,0 +1,371 @@
+.catalogbody {
+    margin: 0 20%;
+    max-width: 1903px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.searchinput {
+    margin-left: 2.5%;
+    width: 90%;
+    height: 50.5px;
+    background-color: white;
+}
+
+.search {
+    background-color: #383838;
+    display: flex;
+}
+
+.searchbutton {
+    margin-top: 2px;
+    padding-top: 3px;
+    border: none;
+    width: 5%;
+    height: 48px;
+    background-color: white;
+}
+
+.searchbutton img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-nad-search {
+    padding: 1% 1%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22.5px;
+    margin: 0;
+    color: white;
+    background-color: #383838;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #383838;
+    width: 100%;
+}
+
+.catalogcard {
+    color: white;
+    position: relative;
+    width: 24%;
+    margin: 0.5%;
+    height: 420px;
+    border: 7.5px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.catalogcardimg {
+
+    position: relative;
+    width: 100%;
+    height: 405px;
+}
+
+.hiddencontent {
+    margin: 0;
+    display: none;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 405px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.cardname {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    width: 90%;
+    margin: 5px 5%;
+    text-align: center;
+}
+
+.cardepisode {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    width: 30%;
+    margin: 10px 35%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.cardtext {
+    font-family: 'Nunito', sans-serif;
+    line-height: 19px;
+    color: white;
+    margin: 15px;
+    width: 90%;
+    font-size: 16px;
+    height: 280px;
+}
+
+.catalogcard:hover .hiddencontent {
+    display: block;
+}
+
+.catalogcard:hover {
+    border-color: #d83541;
+}
+
+.button {
+    width: 33%;
+    background-color: #d83541;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    margin: 8px 33.3%;
+    position: absolute;
+    top: 350px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.message {
+    position: relative;
+    padding: 10px 50px 10px 20px;
+    font-size: 24px;
+    color: white;
+    background-color: #383838;
+    font-family: 'Nunito', sans-serif;
+}
+
+.message__close {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    background-image: url(https://students.codeum.academy/html/js-9/icon-close-button-filter-white.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.message__close:hover {
+    transform: rotate(720deg);
+}
+
+@media(max-width: 1400px) {
+    .catalogbody {
+        margin: 0 15%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .catalogcard {
+        color: white;
+        position: relative;
+        width: 24%;
+        margin: 0.5%;
+        height: 435px;
+        border: 7.5px solid;
+        border-color: black;
+        border-radius: 10px;
+    }
+    .catalogcardimg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .hiddencontent {
+        margin: 0;
+        display: none;
+        width: 100%;
+        z-index: 2;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 420px;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+    }
+    .cardname {
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        width: 90%;
+        margin: 5px 5%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .cardepisode {
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        width: 30%;
+        margin: 5px 35%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .cardtext {
+        font-family: 'Nunito', sans-serif;
+        line-height: 19px;
+        color: white;
+        margin: 5px 15px;
+        width: 90%;
+        font-size: 16px;
+        height: 280px;
+    }
+    .catalogcard:hover .hiddencontent {
+        display: block;
+    }
+    .catalogcard:hover {
+        border-color: #d83541;
+    }
+    .button {
+        width: 33%;
+        background-color: #d83541;
+        height: 30px;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        margin: 8px 33.3%;
+        position: absolute;
+        top: 380px;
+        font-family: 'Nunito', sans-serif;
+    }
+}
+
+@media(max-width: 780px) {
+    .catalogbody {
+        background-color: #383838;
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .searchinput {
+        margin-left: 2.5%;
+        width: 85%;
+        height: 50.5px;
+        background-color: white;
+    }
+    .search {
+        background-color: #383838;
+        display: flex;
+    }
+    .searchbutton {
+
+        width: 10%;
+        height: 53px;
+        background-color: white;
+    }
+    .searchbutton img {
+        width: 100%;
+        height: 100%;
+    }
+    .text-nad-search {
+        padding: 1% 1%;
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        margin: 0;
+        color: white;
+        background-color: #383838;
+    }
+    .catalog {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #383838;
+        width: 100%;
+    }
+    .catalogcard {
+        color: white;
+        position: relative;
+        width: 49%;
+        height: 440px;
+        margin: 0.5%;
+        border: 7.5px solid;
+        border-color: black;
+        border-radius: 10px;
+    }
+    .catalogcardimg {
+        position: relative;
+        width: 100%;
+        height: 425px;
+    }
+    .hiddencontent {
+        margin: 0;
+        display: none;
+        width: 100%;
+        z-index: 2;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 425px;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+    }
+    .cardname {
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 17px;
+    }
+    .cardepisode {
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+    .cardtext {
+        line-height: 22px;
+        color: white;
+        margin: 5px 15px;
+        width: 90%;
+        font-size: 15px;
+        height: 265px;
+        font-family: 'Nunito', sans-serif;
+    }
+    .catalogcard:hover .hiddencontent {
+        display: block;
+    }
+    .catalogcard:hover {
+        border-color: #d83541;
+    }
+    .button {
+        display: none;
+    }
+    .message {
+        position: relative;
+        padding: 10px 50px 10px 20px;
+        font-size: 24px;
+        color: white;
+        background-color: #383838;
+        font-family: 'Nunito', sans-serif;
+    }
+    .message__close {
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        right: 10px;
+        border: none;
+        background-color: transparent;
+        background-image: url(https://students.codeum.academy/html/js-9/icon-close-button-filter-white.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 12px 12px;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .message__close:hover {
+        transform: rotate(720deg);
+    }
+}

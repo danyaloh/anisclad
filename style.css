@@ -1,0 +1,172 @@
+a {
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* background-color: white; */
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #cacfd1 100%) */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hamburger {
+    display: none;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 55px;
+}
+
+.header_link {
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 14px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    background-color: #383838;
+    font-family: 'Nunito', sans-serif;
+    flex: 1;
+}
+
+.header_link:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.headerlink1 {
+    border-top-left-radius: 6px;
+}
+
+.headerlink2 {}
+
+.headerlink3 {}
+
+.headerlink4 {}
+
+.headerlink5 {
+    border-top-right-radius: 6px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #383838;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-image: url('y2.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 17.5% 70px;
+}
+
+.catgif {
+    margin-top: -4.2%;
+    margin-right: 42.5%;
+    margin-left: 42.5%;
+    width: 15%;
+    height: 100px;
+}
+
+.footer_left_text {
+    padding-top: 15px;
+    margin: 15px;
+    color: white;
+    font-size: 20px;
+    width: 42.5%;
+    margin-top: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media(max-width: 780px) {
+    .header {
+        display: block;
+        width: 100%;
+        height: 48px;
+        /* background-position: center center;
+        background-image: url('logo.png'); */
+        background-color: #383838;
+        /* background-repeat: no-repeat; */
+    }
+    .header_link {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        padding: 7px 0;
+        margin: 0 auto;
+    }
+    .menu {
+        position: relative;
+        left: 50%;
+        z-index: 3;
+        width: 100%;
+        transform: translateX(-50%);
+        padding: 20px 30px;
+        background: #383838;
+        box-shadow: 0 4px 15px 5px rgba(0, 0, 0, 0.15);
+        animation: open-menu 0.3s ease forwards;
+    }
+    .menu p {
+        text-align: center;
+        margin-top: 0;
+        text-transform: uppercase;
+        color: white;
+        font-size: 20px;
+        font-family: 'Nunito', sans-serif;
+    }
+    .menu-text {
+        text-align: center;
+    }
+    .menu-text a {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+        padding: 3px;
+    }
+    @keyframes open-menu {
+        from {
+            top: -500px;
+        }
+        to {
+            top: 0;
+        }
+    }
+    .footer {
+        width: 100%;
+        height: 70px;
+        background-color: #383838;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .catgif {
+        margin-bottom: 270px;
+        margin-right: 42.5%;
+        margin-left: 42.5%;
+        width: 13.5%;
+        height: 70px;
+    }
+    .footer_left_text {
+        padding-top: 15px;
+        margin: 15px;
+        color: white;
+        font-size: 20px;
+        width: 42.5%;
+        margin-top: 0;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+}

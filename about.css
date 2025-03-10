@@ -1,0 +1,61 @@
+body {
+    background-color: white;
+    background-size: cover;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 1903px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.mainblock {
+    width: 100%;
+    height: 835px;
+    border-color: #383838;
+}
+
+.mainblock p {
+    font-size: 26px;
+    font-family: 'Nunito', sans-serif;
+    margin: 10px 20px;
+}
+
+.istochnik {}
+
+.img {
+    width: 30%;
+    height: 30%;
+    margin: 150px 35%;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 1400px) {
+    body {
+        background-color: white;
+        background-size: cover;
+        margin: 0 15%;
+        max-width: 1903px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .mainblock {
+        width: 100%;
+        height: 490px;
+        border-color: #383838;
+    }
+}
+
+@media(max-width: 780px) {
+    body {
+        margin: 0;
+    }
+    .mainblock {
+        width: 100%;
+        height: 100%;
+        border-color: #383838;
+    }
+}

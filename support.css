@@ -1,0 +1,172 @@
+body {
+    margin: 0 20%;
+    max-width: 1903px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.label1 {
+    width: 80%;
+    margin: 5px 10%;
+}
+.mainblock {
+    width: 100%;
+    height: 830px;
+    background-color: white;
+    display: flex;
+}
+
+p {
+    cursor: default;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.border {
+    border: 2px solid;
+    border-radius: 6px;
+    border-color: rgb(189, 189, 189);
+}
+
+.voprosi {
+    width: 49%;
+    margin-right: 1%;
+}
+
+.form {
+    width: 49%;
+    margin-left: 1%;
+}
+
+.inactive {
+    display: none;
+    border: none;
+}
+
+.quest1-1, .quest2-1, .quest3-1, .quest4-1, .quest5-1 {
+    margin-left: 15px;
+}
+
+.textupform {
+    text-align: center;
+}
+
+label {
+    cursor: default;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    width: 80%;
+    margin: 5px 10%;
+}
+
+textarea {
+    cursor: default;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    width: 80%;
+    height: 110px;
+    margin: 5px 10%;
+    resize: none;
+}
+
+.forma {
+    width: 100%;
+}
+
+.forma input {
+    width: 80%;
+    margin: 5px 10%;
+    height: 35px;
+}
+
+.forma button {
+    width: 30%;
+    margin: 0 35%;
+    background-color: transparent;
+    border-color: rgb(189, 189, 189);
+    color: black;
+    height: 35px;
+    border-radius: 6px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.message {
+    position: relative;
+    padding: 10px 50px 10px 20px;
+    font-size: 24px;
+    color: white;
+    background-color: #383838;
+    font-family: 'Nunito', sans-serif;
+}
+
+.message__close {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    background-image: url(https://students.codeum.academy/html/js-9/icon-close-button-filter-white.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.message__close:hover {
+    transform: rotate(720deg);
+}
+
+@media(max-width: 1400px) {
+    .mainblock {
+        width: 100%;
+        height: 500px;
+        background-color: white;
+        display: flex;
+    }
+    body {
+        margin: 0 15%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .header{
+        background-color: #383838;
+    }
+    .header_link{
+        width: 23%;
+        padding: 1%;
+    }
+}
+@media(max-width: 780px) {
+    body {
+        margin: 0;
+    }
+    .mainblock {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .voprosi {
+        width: 100%;
+        margin-right: 0;
+    }
+    .form {
+        width: 100%;
+        margin-left: 0;
+    }
+    label {
+        font-size: 14px;
+    }
+    .footer {
+        margin-top: 10px;
+    }
+}

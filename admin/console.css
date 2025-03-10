@@ -1,0 +1,66 @@
+.content {
+    width: 100%;
+    padding-left: 200px;
+    
+}
+.menu {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: cursive;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    height: 100%;
+    width: 200px;
+   border-right: 2px solid;
+  }
+  .menu a {
+    display: block;
+    padding: 10px 0;
+    color: black;
+    font-size: 24px;
+    
+  
+  }
+  .navig {
+      font-family: cursive;
+        font-size: 32px;
+        color:black;
+        text-align: center;
+  }
+  .naviglink {
+    margin: 10px;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes close-menu-anim {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-300px);
+    }
+  }
+  
+  @keyframes open-menu-anim {
+    0% {
+      transform: translateX(-300px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

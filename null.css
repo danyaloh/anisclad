@@ -1,0 +1,77 @@
+body {
+    margin: 0 20%;
+    max-width: 1903px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.searchinput {
+    margin-left: 2.5%;
+    width: 90%;
+    height: 50.5px;
+    background-color: white;
+}
+
+.search {
+    background-color: #383838;
+    display: flex;
+}
+
+.searchbutton {
+    width: 5%;
+    height: 53px;
+    background-color: white;
+}
+
+.text {
+    background-color: white;
+    margin: 15px 20px;
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.searchbutton img {
+    width: 100%;
+    height: 100%;
+}
+
+.null {
+    width: 100%;
+    height: 835px;
+    border-color: #383838;
+}
+
+.paskalbox {
+    width: 470px;
+    height: 150px;
+    position: absolute;
+    left: 115px;
+    top: 35px;
+    cursor: default;
+}
+
+.paskalbox p {
+    cursor: default;
+    text-decoration: none;
+    color: black;
+    margin: 0 0;
+    font-size: 24px;
+}
+
+.life {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+.nolife {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
